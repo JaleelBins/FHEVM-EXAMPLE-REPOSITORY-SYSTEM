@@ -27,8 +27,12 @@ npm test
 
 **Getting Started**: QUICK_START.md, SETUP_GUIDE.md, DEVELOPER_GUIDE.md
 **Learning**: PATTERNS.md, BEST_PRACTICES.md, EXAMPLE_CONTRACTS_TEMPLATE.md
-**Testing**: TEST_FHECounter.test.ts, ADVANCED_INTEGRATION_TESTS.test.ts (40+ test cases, 95%+ coverage)
-**Performance**: PERFORMANCE_BENCHMARKING.md, EXAMPLE_deploy.ts, gas analysis
+**Testing**: 4 comprehensive test suites (125+ test cases, 95%+ coverage)
+  - test/FHECounter.test.ts - Comprehensive counter tests (40+ cases)
+  - test/FHEAdd.test.ts - Addition operation tests (20+ cases)
+  - test/FHEEq.test.ts - Comparison operation tests (25+ cases)
+  - test/ADVANCED_INTEGRATION_TESTS.test.ts - Cross-contract tests (40+ cases)
+**Performance**: PERFORMANCE_BENCHMARKING.md, EXAMPLE_deploy.ts, gas analysis (reports saved as gas-report)
 **Security**: SECURITY_AUDIT_CHECKLIST.md, security audit framework
 **Operations**: MONITORING_MAINTENANCE_GUIDE.md, production operations guide
 **Interaction**: INTERACTION_EXAMPLES.ts, 10 practical interaction patterns
@@ -39,7 +43,7 @@ npm test
 ## 🎯 Key Features
 
 ✨ **Comprehensive Examples** - 25+ production-ready contracts with progressive difficulty
-🧪 **Extensively Tested** - 40+ test cases, 95%+ code coverage
+🧪 **Extensively Tested** - 125+ test cases across 4 test suites, 95%+ code coverage
 📖 **Professional Documentation** - 150+ pages with setup, patterns, and best practices
 🔒 **Security-First** - Complete audit checklist and permission verification
 ⚡ **Production-Ready** - Automated deployment, CI/CD, and monitoring
@@ -50,10 +54,20 @@ npm test
 ```bash
 npm install                          # Install dependencies
 npm run compile                      # Compile contracts
-npm test                            # Run all tests
+npm test                            # Run all tests (125+ test cases)
+npm test test/FHECounter.test.ts    # Run specific test suite
 npx hardhat node                    # Start local blockchain
 npx hardhat coverage               # Generate coverage report
-REPORT_GAS=true npm test           # Gas reporting
+REPORT_GAS=true npm test           # Gas reporting (saves to gas-report)
+```
+
+### Test Suites
+```bash
+# Run individual test suites
+npm test test/FHECounter.test.ts                    # 40+ comprehensive tests
+npm test test/FHEAdd.test.ts                        # 20+ addition tests
+npm test test/FHEEq.test.ts                         # 25+ comparison tests
+npm test test/ADVANCED_INTEGRATION_TESTS.test.ts    # 40+ integration tests
 ```
 
 ## 📊 Project Statistics
@@ -61,27 +75,41 @@ REPORT_GAS=true npm test           # Gas reporting
 | Metric | Value |
 |--------|-------|
 | Example Contracts | 25+ |
-| Test Cases | 40+ |
+| Test Suites | 4 |
+| Test Cases | 125+ |
+| Test Code Lines | 1,364+ |
 | Code Coverage | 95%+ |
 | Documentation Pages | 150+ |
-| Total Lines of Code | 15,000+ |
+| Total Lines of Code | 16,364+ |
 | Solidity Code | 5,000+ |
-| TypeScript Code | 8,000+ |
+| TypeScript Code | 9,364+ |
 
 ## 📈 Performance Benchmarks
 
+### Gas Costs (Typical)
 - TFHE.add: ~1,500,000 gas
 - TFHE.sub: ~1,500,000 gas
 - TFHE.eq: ~2,000,000 gas
 - TFHE.gt: ~2,500,000 gas
 - Permission Grant: ~150,000 gas
 
+### Generate Reports
+```bash
+REPORT_GAS=true npm test              # Generates gas-report file
+cat gas-report                        # View gas analysis
+npm test -- --grep "Gas Benchmark"    # Run gas-specific tests
+```
+
 ## 📚 Documentation Index
 
 **Getting Started**: QUICK_START.md, SETUP_GUIDE.md
 **Learning**: PATTERNS.md, BEST_PRACTICES.md, EXAMPLE_CONTRACTS_TEMPLATE.md
-**Testing**: TEST_FHECounter.test.ts, ADVANCED_INTEGRATION_TESTS.test.ts
-**Performance**: PERFORMANCE_BENCHMARKING.md, gas optimization guide
+**Testing**: 4 comprehensive test suites in test/ directory
+  - test/FHECounter.test.ts (40+ tests)
+  - test/FHEAdd.test.ts (20+ tests)
+  - test/FHEEq.test.ts (25+ tests)
+  - test/ADVANCED_INTEGRATION_TESTS.test.ts (40+ tests)
+**Performance**: PERFORMANCE_BENCHMARKING.md, gas optimization guide (gas-report)
 **Security**: SECURITY_AUDIT_CHECKLIST.md, comprehensive audit framework
 **Operations**: MONITORING_MAINTENANCE_GUIDE.md, production operations
 **Interaction**: INTERACTION_EXAMPLES.ts, practical patterns
@@ -94,20 +122,24 @@ REPORT_GAS=true npm test           # Gas reporting
 ### Level 1: Fundamentals
 - Read QUICK_START.md
 - Review contracts/basic/ examples
-- Study corresponding tests
+- Study test/FHECounter.test.ts to understand testing patterns
+- Run tests: `npm test test/FHECounter.test.ts`
 
 ### Level 2: Intermediate
 - Study BEST_PRACTICES.md
 - Review access control examples
-- Run all tests locally
+- Run all tests locally: `npm test` (125+ test cases)
+- Analyze gas usage: `REPORT_GAS=true npm test`
 
 ### Level 3: Advanced
 - Read DEVELOPER_GUIDE.md
 - Study OpenZeppelin integrations
-- Write custom contracts
+- Review test/ADVANCED_INTEGRATION_TESTS.test.ts
+- Write custom contracts with comprehensive tests
 
 ### Level 4: Production
 - Apply SECURITY_AUDIT_CHECKLIST.md
+- Review PERFORMANCE_BENCHMARKING.md (gas-report analysis)
 - Setup monitoring with MONITORING_MAINTENANCE_GUIDE.md
 - Deploy to testnet and mainnet
 
@@ -122,10 +154,17 @@ REPORT_GAS=true npm test           # Gas reporting
 ## 🎉 Getting Started Today
 
 ```bash
+# One-line setup and test
 npm install && npm run compile && npm test
+
+# View gas analysis
+REPORT_GAS=true npm test
+
+# Run specific test suite
+npm test test/FHECounter.test.ts
 ```
 
-Then read QUICK_START.md for next steps.
+**You just ran 125+ test cases!** Check the output and then read QUICK_START.md for next steps.
 
 ---
 
