@@ -1,0 +1,196 @@
+{
+  "compilerOptions": {
+    // ============== TARGET & ENVIRONMENT ==============
+
+    // Target JavaScript version
+    "target": "ES2020",
+
+    // Module system
+    "module": "commonjs",
+
+    // Node.js compatibility
+    "lib": ["ES2020"],
+
+    // ============== RESOLUTION ==============
+
+    // Module resolution strategy
+    "moduleResolution": "node",
+
+    // Base directory for resolving non-absolute module names
+    "baseUrl": ".",
+
+    // Path mapping for imports
+    "paths": {
+      "@/*": ["./src/*"],
+      "@contracts/*": ["./contracts/*"],
+      "@test/*": ["./test/*"],
+      "@scripts/*": ["./scripts/*"
+    },
+
+    // Allow importing TypeScript files
+    "allowImportingTsExtensions": true,
+
+    // Resolve JSON files as modules
+    "resolveJsonModule": true,
+
+    // Allow JavaScript files
+    "allowJs": true,
+
+    // ============== DECLARATION ==============
+
+    // Generate declaration files (.d.ts)
+    "declaration": true,
+
+    // Output directory for declaration files
+    "declarationDir": "./dist",
+
+    // Emit declaration files even if there are errors
+    "emitDeclarationOnly": false,
+
+    // ============== EMIT ==============
+
+    // Output directory
+    "outDir": "./dist",
+
+    // Root directory of source files
+    "rootDir": ".",
+
+    // Don't emit output files on errors
+    "noEmitOnError": true,
+
+    // Enable decorator support
+    "experimentalDecorators": true,
+
+    // Enable metadata reflection
+    "emitDecoratorMetadata": true,
+
+    // ============== STRICT TYPE CHECKING ==============
+
+    // Enable all strict type checking options
+    "strict": true,
+
+    // Ensure non-null assertions
+    "strictNullChecks": true,
+
+    // Ensure function parameters are typed
+    "strictFunctionTypes": true,
+
+    // Ensure bind/call/apply are type-safe
+    "strictBindCallApply": true,
+
+    // Ensure property initialization
+    "strictPropertyInitialization": true,
+
+    // Ensure implicit any is caught
+    "noImplicitAny": true,
+
+    // Ensure implicit this is caught
+    "noImplicitThis": true,
+
+    // Report unused local variables
+    "noUnusedLocals": true,
+
+    // Report unused function parameters
+    "noUnusedParameters": true,
+
+    // Report unreachable code
+    "noUnreachableCode": true,
+
+    // Ensure all code paths return a value
+    "noImplicitReturns": true,
+
+    // Report errors on fallthrough switch cases
+    "noFallthroughCasesInSwitch": true,
+
+    // ============== INTEROPERABILITY ==============
+
+    // Allow importing CommonJS modules as ES modules
+    "esModuleInterop": true,
+
+    // Allow synthetic default imports
+    "allowSyntheticDefaultImports": true,
+
+    // Use define for class fields
+    "useDefineForClassFields": true,
+
+    // ============== ADVANCED ==============
+
+    // Isolate module transpiling
+    "isolatedModules": true,
+
+    // Skip type checking of declaration files
+    "skipLibCheck": true,
+
+    // Force consistent casing in file names
+    "forceConsistentCasingInFileNames": true,
+
+    // Suppress error checking on JS files
+    "checkJs": false,
+
+    // ============== SOURCE MAPS ==============
+
+    // Generate source maps
+    "sourceMap": true,
+
+    // Include source file content in source maps
+    "inlineSources": true,
+
+    // ============== OPTIMIZATION ==============
+
+    // Use faster transpilation for Babel
+    "transpileOnly": true,
+
+    // ============== COMPILER PLUGINS ==============
+
+    // Enable incremental compilation
+    "incremental": true,
+
+    // Directory for incremental build
+    "tsBuildInfoFile": "./.tsbuildinfo"
+  },
+
+  // ============== FILE INCLUSION ==============
+
+  "include": [
+    "contracts/**/*",
+    "test/**/*",
+    "scripts/**/*",
+    "deploy/**/*",
+    "hardhat.config.ts",
+    "types/**/*"
+  ],
+
+  // ============== FILE EXCLUSION ==============
+
+  "exclude": [
+    "node_modules",
+    "artifacts",
+    "cache",
+    "dist",
+    "coverage",
+    ".git",
+    ".github",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ],
+
+  // ============== TS-NODE CONFIGURATION ==============
+
+  "ts-node": {
+    // Use CommonJS for ts-node
+    "compilerOptions": {
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true
+    },
+
+    // Transpile only (faster)
+    "transpileOnly": true,
+
+    // Files to register
+    "files": true,
+
+    // Pretty print errors
+    "pretty": true
+  }
+}
