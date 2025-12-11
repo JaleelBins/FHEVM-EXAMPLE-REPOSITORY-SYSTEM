@@ -1,0 +1,90 @@
+{
+  "name": "fhevm-examples-generator",
+  "version": "1.0.0",
+  "description": "Comprehensive system for creating FHEVM example repositories with automated documentation generation",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:debug": "hardhat test --network localhost --no-compile",
+    "test:watch": "hardhat test --watch",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "deploy": "hardhat run deploy/deploy.ts",
+    "deploy:sepolia": "hardhat run deploy/deploy.ts --network sepolia",
+    "clean": "hardhat clean",
+    "lint": "solhint 'contracts/**/*.sol' && eslint .",
+    "lint:fix": "prettier --write . && eslint --fix .",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit",
+    "create-example": "ts-node scripts/create-fhevm-example.ts",
+    "create-category": "ts-node scripts/create-fhevm-category.ts",
+    "generate-docs": "ts-node scripts/generate-docs.ts",
+    "generate-all-docs": "ts-node scripts/generate-docs.ts --all",
+    "validate": "ts-node scripts/validate-examples.ts",
+    "help:examples": "ts-node scripts/list-examples.ts",
+    "help:categories": "ts-node scripts/list-categories.ts",
+    "build": "npm run compile && npm run lint && npm run type-check",
+    "verify": "npm run build && npm run test"
+  },
+  "keywords": [
+    "fhevm",
+    "fully homomorphic encryption",
+    "privacy",
+    "smart contracts",
+    "hardhat",
+    "solidity",
+    "encrypted computation",
+    "confidential contracts"
+  ],
+  "author": "Your Name",
+  "license": "BSD-3-Clause-Clear",
+  "dependencies": {
+    "@fhevm/hardhat-plugin": "^0.3.0-1",
+    "@fhevm/solidity": "^0.9.1",
+    "@zama-fhe/relayer-sdk": "^1.0.0",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/bytes": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^11.1.2",
+    "@types/chai": "^4.3.5",
+    "@types/fs-extra": "^11.0.1",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "chai": "^4.3.7",
+    "ethers": "^6.8.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "hardhat": "^2.17.0",
+    "hardhat-deploy": "^0.11.37",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier": "^3.0.0",
+    "solhint": "^4.0.0",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.3.2",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/fhevm-examples-generator"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/fhevm-examples-generator/issues"
+  },
+  "homepage": "https://github.com/your-username/fhevm-examples-generator#readme"
+}
