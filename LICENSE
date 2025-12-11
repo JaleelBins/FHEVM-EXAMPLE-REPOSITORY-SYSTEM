@@ -1,0 +1,105 @@
+BSD 3-Clause Clear License
+
+Copyright (c) 2025, Zama
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+4. The source code and/or binary code cannot be used for the purpose of
+   training or improving machine learning algorithms or models. This
+   includes, but is not limited to, training neural networks, language
+   models, or other machine learning systems, without the explicit and
+   written consent of the copyright holder.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+---
+
+For FHEVM Examples Competition
+
+This software includes examples demonstrating Fully Homomorphic Encryption
+(FHE) smart contracts. These examples are provided as educational material
+for the FHEVM Examples Competition.
+
+All participants in the competition agree to:
+- Proper attribution of original work
+- Following this license terms
+- Using these examples for educational and development purposes only
+- Not using for malicious or unauthorized purposes
+
+Zama Confidential Blockchain Protocol
+Copyright (c) 2024-2025 Zama
+
+---
+
+Additional Notes:
+
+1. OPEN SOURCE
+   This project is open source and contributions are welcome. Please ensure
+   any contributions adhere to this license.
+
+2. DISCLAIMER OF WARRANTY
+   This software is provided as-is. While Zama strives to maintain security
+   and correctness, there are no warranties or guarantees of any kind.
+
+   Users must conduct their own security audits before deploying to production.
+
+3. NO GUARANTEE OF FHE SECURITY
+   While FHEVM uses industry-leading FHE technology, users must understand
+   the cryptographic assumptions and limitations of FHE before deployment.
+
+4. USAGE IN PRODUCTION
+   Before using this code in production:
+   - Conduct thorough security audits
+   - Test extensively on testnets
+   - Review all cryptographic assumptions
+   - Understand gas costs and performance implications
+   - Follow all regulatory requirements
+
+5. MODIFICATIONS
+   Users may modify this software for their own use, but modifications
+   must retain this license and copyright notice.
+
+6. DISTRIBUTION
+   Distributions of modified versions must:
+   - Include this license
+   - Document modifications
+   - Retain copyright notices
+   - Not misrepresent the original authors
+
+7. ATTRIBUTION
+   When using examples from this project, proper attribution is required:
+   "Based on FHEVM Examples from the Zama FHEVM Examples Competition"
+
+---
+
+For more information about Zama and FHE:
+- Website: https://www.zama.ai
+- GitHub: https://github.com/zama-ai
+- Documentation: https://docs.zama.ai
+
+For more information about this specific competition:
+- Competition Details: COMPETITION_GUIDE.md
+- Development Guide: DEVELOPER_GUIDE.md
+- Examples: EXAMPLE_CATEGORIES_REFERENCE.md
