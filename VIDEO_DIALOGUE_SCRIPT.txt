@@ -1,0 +1,26 @@
+FHEVM EXAMPLE REPOSITORY - 60 SECOND VIDEO DIALOGUE
+====================================================
+
+Scene 1: Title & Hook
+Imagine writing smart contracts where sensitive data stays encrypted... even while being computed. That's FHEVM.
+
+Scene 2: Problem Statement
+Traditional blockchains execute all logic with public data. Everyone can see everything. But what if you need privacy? What if users want to keep their financial information, personal data, or business logic confidential?
+
+Scene 3: Solution Introduction
+FHEVM enables Fully Homomorphic Encryption on Ethereum. Your data stays encrypted throughout computation. The blockchain confirms the result without revealing the values.
+
+Scene 4: Live Demo
+Here's a real FHE counter contract. Users encrypt their value locally. They send the encrypted data to the contract. The blockchain performs encrypted arithmetic. Results are computed without ever revealing the plaintext. Perfect for protecting user privacy at scale.
+
+Scene 5: Use Cases
+Use cases include private voting systems, confidential auctions, encrypted payments, and proprietary trading algorithms. All running on the blockchain. All maintaining complete privacy.
+
+Scene 6: Call to Action
+Get started with twenty-five working examples. Full documentation. Complete test suites. Visit our repository today and build the private smart contracts of tomorrow.
+
+=====================================
+WORD COUNT: 220 words
+ESTIMATED READING TIME: 60 seconds
+PACING: 3.5 words per second
+=====================================

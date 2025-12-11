@@ -1,7 +1,7 @@
 /**
  * COMPLETE Example Configuration - FHEVM Competition Package
  *
- * This configuration maps ALL 25+ FHEVM examples across 5 categories:
+ * This configuration maps ALL 24+ FHEVM examples across 5 categories:
  * 1. Basic (9 examples) - Fundamental FHE operations
  * 2. Access Control (4 examples) - Permission management patterns
  * 3. Anti-Patterns (4 examples) - Common mistakes to avoid
