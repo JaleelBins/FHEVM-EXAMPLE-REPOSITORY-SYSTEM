@@ -1,0 +1,16 @@
+artifacts
+build
+cache
+coverage
+dist
+fhevmTemp
+node_modules
+types
+
+# Generated files
+*.d.ts
+*.js
+!.eslintrc.js
+!hardhat.config.js
+!tasks/**
+!scripts/**
