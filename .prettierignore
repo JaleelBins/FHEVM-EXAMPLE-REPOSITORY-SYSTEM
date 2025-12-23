@@ -1,0 +1,21 @@
+artifacts
+build
+cache
+coverage
+dist
+fhevmTemp
+node_modules
+types
+
+# Generated files
+*.d.ts
+*.lock
+*.log
+.DS_Store
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+pnpm-lock.yaml
+yarn.lock
